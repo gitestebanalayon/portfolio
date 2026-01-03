@@ -759,6 +759,48 @@ button {
 }
 
 
+.project-card:nth-child(4) .tag {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card:nth-child(4) .tag::before {
+  content: "Filled";
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, #22c55e 0%, #4ade80 51%, #16a34a 100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.project-card:nth-child(4) .tag::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  box-shadow: 140px -140px #15803d;
+  background-image: linear-gradient(45deg, #22c55e 0%, #4ade80 51%, #22c55e 100%);
+}
+
+
 
 .project-image {
   width: 100%;
@@ -825,8 +867,10 @@ button {
   height: 100%;
 }
 
-.project-button button {
+.project-button a {
   width: 100%;
+  margin-top: 1.5em;
+  font-size: 0.875em;
 }
 
 
