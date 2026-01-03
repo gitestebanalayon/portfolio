@@ -688,7 +688,7 @@ button {
 }
 
 .project-card .tag::before {
-  content: 'En Progreso';
+  content: 'In Progress';
   position: absolute;
   width: 150%;
   height: 40px;
@@ -730,7 +730,7 @@ button {
 }
 
 .project-card:nth-child(2) .tag::before {
-  content: "Completado";
+  content: "Filled";
   position: absolute;
   width: 150%;
   height: 40px;
