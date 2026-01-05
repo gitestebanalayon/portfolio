@@ -127,7 +127,7 @@ class NavigationManager {
   }
 
   setupScrollSpy() {
-    const sections = ["inicio", "sobre-mi", "habilidades", "proyectos", "contacto"]
+    const sections = ["home", "about-me", "skills", "projects", "contact"]
 
     const observer = new IntersectionObserver(
       (entries) => {
