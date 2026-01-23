@@ -1,3 +1,98 @@
+import { translations } from "./translations.js"
+
+// Language Management
+class LanguageManager {
+    constructor() {
+        this.currentLang = localStorage.getItem('language') || 'en';
+        this.init();
+    }
+
+    init() {
+        this.applyLanguage();
+        this.setupEventListeners();
+    }
+
+    applyLanguage() {
+        // Actualizar el atributo lang del HTML
+        document.documentElement.lang = this.currentLang;
+        
+        // Actualizar meta tag de idioma
+        const metaLanguage = document.querySelector('meta[name="language"]');
+        if (metaLanguage) {
+            metaLanguage.content = this.currentLang === 'en' ? 'English' : 'Spanish';
+        }
+
+        // Aplicar traducciones
+        this.updateContent();
+    }
+
+    updateContent() {
+        const texts = translations[this.currentLang];
+        
+        if (!texts) {
+            console.error(`No translations found for language: ${this.currentLang}`);
+            return;
+        }
+
+        // Actualizar elementos con data-i18n
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            if (texts[key]) {
+                element.textContent = texts[key];
+            }
+        });
+
+        // Actualizar elementos con data-i18n-html (para contenido con HTML)
+        document.querySelectorAll('[data-i18n-html]').forEach(element => {
+            const key = element.getAttribute('data-i18n-html');
+            if (texts[key]) {
+                element.innerHTML = texts[key];
+            }
+        });
+
+        // Actualizar placeholders
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+            const key = element.getAttribute('data-i18n-placeholder');
+            if (texts[key]) {
+                element.placeholder = texts[key];
+            }
+        });
+
+        // Actualizar valores de los selectores de idioma
+        const langSelect = document.getElementById('languageSelect');
+        const langSelectMobile = document.getElementById('languageSelectMobile');
+        
+        if (langSelect) langSelect.value = this.currentLang;
+        if (langSelectMobile) langSelectMobile.value = this.currentLang;
+    }
+
+    changeLanguage(lang) {
+        if (this.currentLang === lang) return;
+        
+        this.currentLang = lang;
+        localStorage.setItem('language', lang);
+        this.applyLanguage();
+    }
+
+    setupEventListeners() {
+        // Selector de idioma desktop
+        const langSelect = document.getElementById('languageSelect');
+        if (langSelect) {
+            langSelect.addEventListener('change', (e) => {
+                this.changeLanguage(e.target.value);
+            });
+        }
+
+        // Selector de idioma mobile
+        const langSelectMobile = document.getElementById('languageSelectMobile');
+        if (langSelectMobile) {
+            langSelectMobile.addEventListener('change', (e) => {
+                this.changeLanguage(e.target.value);
+            });
+        }
+    }
+}
+
 // Theme Management
 class ThemeManager {
   constructor() {
@@ -204,56 +299,62 @@ class ContactFormManager {
   }
 }
 
-// Utility Functions
-function scrollToSection(sectionId) {
-  const element = document.getElementById(sectionId)
-  if (element) {
-    const headerHeight = 64
-    const elementPosition = element.offsetTop - headerHeight
-
-    window.scrollTo({
-      top: elementPosition,
-      behavior: "smooth",
-    })
-  }
-}
-
 // Initialize everything when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
-  // Initialize Lucide icons
-  if (window.lucide) {
-    window.lucide.createIcons()
-  }
+    // Initialize Lucide icons
+    if (window.lucide) {
+        window.lucide.createIcons();
+    }
 
-  // Initialize managers
-  new ThemeManager()
-  new NavigationManager()
-  new ContactFormManager()
+    // Initialize managers
+    new ThemeManager();
+    new NavigationManager();
+    new ContactFormManager();
+    new LanguageManager(); // ¡Nuevo manager!
 
-  // Add smooth scrolling to all anchor links
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault()
-      const target = document.querySelector(this.getAttribute("href"))
-      if (target) {
-        const headerHeight = 64
-        const elementPosition = target.offsetTop - headerHeight
+    // Add smooth scrolling to all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+                const headerHeight = 64;
+                const elementPosition = target.offsetTop - headerHeight;
 
-        window.scrollTo({
-          top: elementPosition,
-          behavior: "smooth",
-        })
-      }
-    })
-  })
-})
+                window.scrollTo({
+                    top: elementPosition,
+                    behavior: "smooth",
+                });
+            }
+        });
+    });
+
+    // Set current year in footer
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+        const currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
+    }
+});
 
 // Add loading animation
 window.addEventListener("load", () => {
-  document.body.classList.add("loaded")
-})
+    document.body.classList.add("loaded");
+});
 
-// Set current year in footer
-const yearSpan = document.getElementById('year');
-const currentYear = new Date().getFullYear();
-yearSpan.textContent = currentYear;
+// Mantén esta función global si la necesitas para otros scripts
+function scrollToSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+        const headerHeight = 64;
+        const elementPosition = element.offsetTop - headerHeight;
+
+        window.scrollTo({
+            top: elementPosition,
+            behavior: "smooth",
+        });
+    }
+}
+
+
+

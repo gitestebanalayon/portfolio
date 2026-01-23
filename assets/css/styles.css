@@ -984,6 +984,41 @@ button {
   font-size: 0.875rem;
 }
 
+
+/* Selector de idioma */
+.language-selector {
+    position: relative;
+}
+
+.language-select {
+    background-color: var(--card);
+    color: var(--foreground);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    padding: 0.4rem 0.75rem;
+    font-size: 0.875rem;
+    font-family: var(--font-family);
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.language-select:hover {
+    border-color: var(--primary);
+}
+
+.language-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--ring);
+}
+
+/* Para móvil */
+.language-selector-mobile .language-select {
+    padding: 0.4rem;
+    min-width: 60px;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav-desktop {
@@ -1055,6 +1090,21 @@ button {
   .container {
     padding: 0 1rem;
   }
+
+
+  .language-selector-mobile {
+        display: block;
+    }
+    
+  .nav-desktop .language-selector {
+      display: none;
+  }
+}
+
+@media (min-width: 769px) {
+    .language-selector-mobile {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {

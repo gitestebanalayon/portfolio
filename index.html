@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="Spanish">
     <title>Esteban Alayón - Fullstack Developer</title>
     <meta name="description"
         content="Professional portfolio of Esteban Alayón, Fullstack Developer specializing in REST APIs, static and dynamic websites.">
@@ -42,11 +43,27 @@
 
                 <!-- Desktop Navigation -->
                 <nav class="nav-desktop">
-                    <a href="#home" class="nav-link active" data-section="home">Home</a>
-                    <a href="#about-me" class="nav-link" data-section="about-me">About Me</a>
-                    <a href="#skills" class="nav-link" data-section="skills">Skills</a>
-                    <a href="#projects" class="nav-link" data-section="projects">Projects</a>
-                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                    <a href="#home" class="nav-link active" data-section="home" data-i18n="nav.home">Home</a>
+                    <a href="#about-me" class="nav-link" data-section="about-me" data-i18n="nav.about">About Me</a>
+                    <a href="#skills" class="nav-link" data-section="skills" data-i18n="nav.skills">Skills</a>
+                    <a href="#projects" class="nav-link" data-section="projects" data-i18n="nav.projects">Projects</a>
+                    <a href="#contact" class="nav-link" data-section="contact" data-i18n="nav.contact">Contact</a>
+                    
+                    <!-- Selector de idioma -->
+                    <div class="language-selector">
+                        <select id="languageSelect" class="language-select">
+                            <option value="en">English</option>
+                            <option value="es">Español</option>
+                            <option value="fr">Français</option>
+                            <option value="pt">Português</option>
+                            <option value="de">Deutsch</option>
+                            <option value="it">Italiano</option>
+                            <option value="ja">日本語</option>
+                            <option value="zh">中文</option>
+                            <option value="ru">Русский</option>
+                        </select>
+                    </div>
+                    
                     <button class="theme-toggle" id="themeToggle">
                         <i data-lucide="moon" class="theme-icon"></i>
                     </button>
@@ -54,6 +71,19 @@
 
                 <!-- Mobile Menu -->
                 <div class="mobile-controls">
+                    <div class="language-selector-mobile">
+                        <select id="languageSelectMobile" class="language-select">
+                            <option value="en">EN</option>
+                            <option value="es">ES</option>
+                            <option value="fr">FR</option>
+                            <option value="pt">PT</option>
+                            <option value="de">DE</option>
+                            <option value="it">IT</option>
+                            <option value="ja">JP</option>
+                            <option value="zh">ZH</option>
+                            <option value="ru">RU</option>
+                        </select>
+                    </div>
                     <button class="theme-toggle" id="themeToggleMobile">
                         <i data-lucide="moon" class="theme-icon"></i>
                     </button>
@@ -65,11 +95,11 @@
 
             <!-- Mobile Navigation -->
             <nav class="nav-mobile" id="mobileNav">
-                <a href="#home" class="nav-link-mobile active" data-section="home">Home</a>
-                <a href="#about-me" class="nav-link-mobile" data-section="about-me">About Me</a>
-                <a href="#skills" class="nav-link-mobile" data-section="skills">Skills</a>
-                <a href="#projects" class="nav-link-mobile" data-section="projects">Projects</a>
-                <a href="#contact" class="nav-link-mobile" data-section="contact">Contact</a>
+                <a href="#home" class="nav-link-mobile active" data-section="home" data-i18n="nav.home">Home</a>
+                <a href="#about-me" class="nav-link-mobile" data-section="about-me" data-i18n="nav.about">About Me</a>
+                <a href="#skills" class="nav-link-mobile" data-section="skills" data-i18n="nav.skills">Skills</a>
+                <a href="#projects" class="nav-link-mobile" data-section="projects" data-i18n="nav.projects">Projects</a>
+                <a href="#contact" class="nav-link-mobile" data-section="contact" data-i18n="nav.contact">Contact</a>
             </nav>
         </div>
     </header>
@@ -83,20 +113,20 @@
                     <div class="hero-text">
                         <div class="hero-intro">
                             <div class="accent-line"></div>
-                            <h1 class="hero-title">Esteban Alayón</h1>
+                            <h1 class="hero-title" data-i18n="hero.title">Esteban Alayón</h1>
                             <div class="hero-badge">
-                                <span class="badge">FULLSTACK DEVELOPMENT</span>
+                                <span class="badge" data-i18n="hero.badge">FULLSTACK DEVELOPMENT</span>
                                 <div class="status-dot"></div>
                             </div>
                         </div>
 
-                        <p class="hero-description">
+                        <p class="hero-description" data-i18n-html="hero.description">
                             Developer specializing in the creation of <strong>Web Systems</strong>,
                             <strong>Static and Dynamic Web Pages</strong>.
                         </p>
 
                         <div class="social-section">
-                            <p class="social-label">Social networks:</p>
+                            <p class="social-label" data-i18n="hero.socialLabel">Social networks:</p>
                             <div class="social-links">
                                 <a href="https://www.tiktok.com/@estebanalayon7" target="_blank"
                                     rel="noopener noreferrer" class="social-link" title="TikTok">
@@ -117,25 +147,11 @@
                         </div>
 
                         <div class="hero-buttons">
-                            <button class="btn btn-primary" onclick="scrollToSection('contact')">Contact</button>
-                            <button class="btn btn-outline" onclick="scrollToSection('projects')">View Projects</button>
+                            <button class="btn btn-primary" onclick="scrollToSection('contact')" data-i18n="hero.contactBtn">Contact</button>
+                            <button class="btn btn-outline" onclick="scrollToSection('projects')" data-i18n="hero.projectsBtn">View Projects</button>
                         </div>
-
-                        <!-- <div class="brand-section">
-                            <p class="brand-label">Mi marca personal:</p>
-                            <div class="brand-card">
-                                <div class="brand-icon">
-                                    <span>N</span>
-                                </div>
-                                <div class="brand-info">
-                                    <p class="brand-name">Netzgo</p>
-                                    <p class="brand-desc">Desarrollo Web Profesional</p>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
 
-                    <!-- Image -->
                     <div class="hero-image">
                         <div class="image-container">
                             <div class="image-bg"></div>
@@ -151,11 +167,11 @@
         <!-- About Section -->
         <section id="about-me" class="about">
             <div class="container">
-                <h2 class="section-title">About Me</h2>
+                <h2 class="section-title" data-i18n="about.title">About Me</h2>
                 <div class="about-content">
                     <div class="about-card">
-                        <h3 class="about-subtitle">Formation:</h3>
-                        <p class="about-text">
+                        <h3 class="about-subtitle" data-i18n="about.formation">Formation:</h3>
+                        <p class="about-text" data-i18n="about.formationText">
                             I have a Bachelor's degree in Computer Science. My training combines solid fundamentals with a practical approach to web development.
                         </p>
                         <div class="about-icons">
@@ -166,8 +182,8 @@
                     </div>
 
                     <div class="about-card">
-                        <h3 class="about-subtitle">Experience:</h3>
-                        <p class="about-text">
+                        <h3 class="about-subtitle" data-i18n="about.experience">Experience:</h3>
+                        <p class="about-text" data-i18n="about.experienceText">
                             More than 3 years in backend and frontend projects for sectors such as education, interactive applications and in the creation of APIs.
                         </p>
                         <div class="about-icons">
@@ -178,8 +194,8 @@
                     </div>
 
                     <div class="about-card">
-                        <h3 class="about-subtitle">Technical Skills:</h3>
-                        <p class="about-text">
+                        <h3 class="about-subtitle" data-i18n="about.technical">Technical Skills:</h3>
+                        <p class="about-text" data-i18n="about.technicalText">
                             Proficiency in Django, Nest.js, Vue.js, and PostgreSQL. Experience in authentication, API services, and version control.
                         </p>
                         <div class="about-icons">
@@ -190,42 +206,42 @@
                     </div>
 
                     <div class="about-card">
-                        <h3 class="about-subtitle">Frontend Development:</h3>
-                        <p class="about-text">
+                        <h3 class="about-subtitle" data-i18n="about.frontend">Frontend Development:</h3>
+                        <p class="about-text" data-i18n="about.frontendText">
                             Specialized in creating responsive and accessible user interfaces.
                             Experience with Vue.js, modern CSS frameworks like Bootstrap, and templates like tabler.io.
                         </p>
                         <div class="about-icons">
+                            <i data-lucide="monitor"></i>
                             <i data-lucide="layout"></i>
                             <i data-lucide="smartphone"></i>
-                            <i data-lucide="palette"></i>
                         </div>
                     </div>
 
                     <div class="about-card">
-                        <h3 class="about-subtitle">Backend Development:</h3>
-                        <p class="about-text">
+                        <h3 class="about-subtitle" data-i18n="about.backend">Backend Development:</h3>
+                        <p class="about-text" data-i18n="about.backendText">
                             Development of robust and scalable APIs with NestJS, Django Ninja, among others.
                             Implementation of secure authentication and authorization systems.
                         </p>
                         <div class="about-icons">
                             <i data-lucide="server"></i>
-                            <i data-lucide="shield"></i>
-                            <i data-lucide="network"></i>
+                            <i data-lucide="shield-check"></i>
+                            <i data-lucide="cloud"></i>
                         </div>
                     </div>
 
                     <div class="about-card">
-                        <h3 class="about-subtitle">Database:</h3>
-                        <p class="about-text">
+                        <h3 class="about-subtitle" data-i18n="about.database">Database:</h3>
+                        <p class="about-text" data-i18n="about.databaseText">
                             Design and optimization of relational database schemas.
                             Experience with PostgreSQL, MySQL for different use cases and tools like
                             dbdiagram.io.
                         </p>
                         <div class="about-icons">
                             <i data-lucide="database"></i>
+                            <i data-lucide="bar-chart-2"></i>
                             <i data-lucide="hard-drive"></i>
-                            <i data-lucide="bar-chart"></i>
                         </div>
                     </div>
                 </div>
@@ -235,7 +251,7 @@
         <!-- Skills Section -->
         <section id="skills" class="skills">
             <div class="container">
-                <h2 class="section-title">Skills</h2>
+                <h2 class="section-title" data-i18n="skills.title">Skills</h2>
                 <div class="skills-grid">
                     <div class="skill-item">
                         <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
@@ -364,7 +380,7 @@
         <!-- Projects Section -->
         <section id="projects" class="projects">
             <div class="container">
-                <h2 class="section-title">Projects</h2>
+                <h2 class="section-title" data-i18n="projects.title">Projects</h2>
                 <div class="projects-grid">
 
                     <div class="project-card">
@@ -373,9 +389,9 @@
                             <img src="./assets/img/projects/electronica.png" alt="Electronic Project Administrative">
                         </div>
                         <div class="project-content">
-                            <span class="project-title">Administrative Electronics</span>
-                            <h3 class="project-category">Personal project</h3>
-                            <p class="project-description">
+                            <span class="project-title" data-i18n="projects.electronicsTitle">Administrative Electronics</span>
+                            <h3 class="project-category" data-i18n="projects.electronicsCategory">Personal project</h3>
+                            <p class="project-description" data-i18n="projects.electronicsDesc">
                                 Comprehensive web platform for managing the entry and exit of customers and devices under repair.
                             </p>
                             <div class="project-tech">
@@ -389,7 +405,7 @@
                                 <span class="tech-tag" title="VSC"><img src="./assets/img/icon21.png" alt="js"></span>
                             </div>
                             <div class="project-button">
-                                <a href="#" target="_blank" class="btn btn-outline" onclick="">See project</a>
+                                <a href="#" target="_blank" class="btn btn-outline" data-i18n="projects.viewBtn">See project</a>
                             </div>
                         </div>
                     </div>
@@ -400,9 +416,9 @@
                             <img src="./assets/img/projects/registrodocentes.png" alt="Teacher Registration Project">
                         </div>
                         <div class="project-content">
-                            <span class="project-title">Registration PNFD of the UNEM</span>
-                            <h3 class="project-category">Work project</h3>
-                            <p class="project-description">
+                            <span class="project-title" data-i18n="projects.teachersTitle">Registration PNFD of the UNEM</span>
+                            <h3 class="project-category" data-i18n="projects.teachersCategory">Work project</h3>
+                            <p class="project-description" data-i18n="projects.teachersDesc">
                                 Web platform for the pre-registration of teachers nationwide in Venezuela and mass registrations.
                             </p>
                             <div class="project-tech">
@@ -415,20 +431,21 @@
                                 <span class="tech-tag" title="VSC"><img src="./assets/img/icon21.png" alt="js"></span>
                             </div>
                             <div class="project-button">
-                                <a href="https://registrodocentes.netlify.app/" target="_blank" class="btn btn-outline" onclick="">See project</a>
+                                <a href="https://registrodocentes.netlify.app/" target="_blank" class="btn btn-outline" data-i18n="projects.viewBtn">See project</a>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Repite para los otros proyectos con sus respectivas keys -->
                     <div class="project-card">
                         <span class="tag"></span>
                         <div class="project-image">
                             <img src="./assets/img/projects/endesarrollo.png" alt="Intranet of the UNEM">
                         </div>
                         <div class="project-content">
-                            <span class="project-title">Intranet of the UNEM</span>
-                            <h3 class="project-category">Work project</h3>
-                            <p class="project-description">
+                            <span class="project-title" data-i18n="projects.intranetTitle">Intranet of the UNEM</span>
+                            <h3 class="project-category" data-i18n="projects.intranetCategory">Work project</h3>
+                            <p class="project-description" data-i18n="projects.intranetDesc">
                                 Comprehensive web platform that centralizes and automates administrative and HR management.
                             </p>
                             <div class="project-tech">
@@ -442,10 +459,9 @@
                                 <span class="tech-tag" title="VSC"><img src="./assets/img/icon21.png" alt="js"></span>
                             </div>
                             <div class="project-button">
-                                <a href="#" target="_blank" class="btn btn-outline" onclick="">See project</a>
+                                <a href="#" target="_blank" class="btn btn-outline" data-i18n="projects.viewBtn">See project</a>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="project-card">
@@ -454,9 +470,9 @@
                             <img src="./assets/img/projects/burger.png" alt="Burger professional page">
                         </div>
                         <div class="project-content">
-                            <span class="project-title">Burger professional page</span>
-                            <h3 class="project-category">Personal project</h3>
-                            <p class="project-description">
+                            <span class="project-title" data-i18n="projects.burgerTitle">Burger professional page</span>
+                            <h3 class="project-category" data-i18n="projects.burgerCategory">Personal project</h3>
+                            <p class="project-description" data-i18n="projects.burgerDesc">
                                 Website for selling hamburgers for professional and successful fast food businesses.
                             </p>
                             <div class="project-tech">
@@ -466,11 +482,10 @@
                                 <span class="tech-tag" title="VSC"><img src="./assets/img/icon21.png" alt="js"></span>
                             </div>
                             <div class="project-button">
-                                <a href="https://gitestebanalayon.github.io/burger-palace/" target="_blank" class="btn btn-outline" onclick="">See project</a>
+                                <a href="https://gitestebanalayon.github.io/burger-palace/" target="_blank" class="btn btn-outline" data-i18n="projects.viewBtn">See project</a>
                             </div>
                         </div>
                     </div>
-
 
                     <div class="project-card">
                         <span class="tag"></span>
@@ -478,9 +493,9 @@
                             <img src="./assets/img/projects/ahv.png" alt="Order management">
                         </div>
                         <div class="project-content">
-                            <span class="project-title">Order management</span>
-                            <h3 class="project-category">Work project</h3>
-                            <p class="project-description">
+                            <span class="project-title" data-i18n="projects.ordersTitle">Order management</span>
+                            <h3 class="project-category" data-i18n="projects.ordersCategory">Work project</h3>
+                            <p class="project-description" data-i18n="projects.ordersDesc">
                                 Web platform for managing customer orders and sales reports, ideal for businesses large and small
                             </p>
                             <div class="project-tech">
@@ -493,12 +508,10 @@
                                 <span class="tech-tag" title="VSC"><img src="./assets/img/icon21.png" alt="vsc"></span>
                             </div>
                             <div class="project-button">
-                                <a href="https://ahvadmin.pythonanywhere.com" target="_blank" class="btn btn-outline" onclick="">See project</a>
+                                <a href="https://ahvadmin.pythonanywhere.com" target="_blank" class="btn btn-outline" data-i18n="projects.viewBtn">See project</a>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </section>
@@ -506,7 +519,7 @@
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="container">
-                <h2 class="section-title">Contact</h2>
+                <h2 class="section-title" data-i18n="contact.title">Contact</h2>
                 <div class="contact-content">
                     <div class="contact-info">
                         <div class="contact-item">
@@ -517,34 +530,33 @@
 
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
-                            <label for="name">Name:</label>
+                            <label for="name" data-i18n="contact.nameLabel">Name:</label>
                             <input type="text" id="name" name="name" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="email">Email:</label>
+                            <label for="email" data-i18n="contact.emailLabel">Email:</label>
                             <input type="email" id="email" name="email" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="message">Message:</label>
+                            <label for="message" data-i18n="contact.messageLabel">Message:</label>
                             <textarea id="message" name="message" rows="2" required></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Send message</button>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact.sendBtn">Send message</button>
                     </form>
                 </div>
 
                 <div class="footer">
-                    <p>Copyright © <span id="year"></span> Esteban Alayón - Portfolio. All rights reserved.
-                    </p>
+                    <p data-i18n="contact.footer">Copyright © <span id="year"></span> Esteban Alayón - Portfolio. All rights reserved.</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="https://unpkg.com/lucide@0.310.0/dist/umd/lucide.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
 </body>
 
 </html>
