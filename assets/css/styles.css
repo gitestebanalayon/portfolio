@@ -33,6 +33,9 @@
 
   /* Typography */
   --font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --tag-filled: "Filled";
+  --tag-in-progress: "In Progress";
 }
 
 .dark {
@@ -51,6 +54,9 @@
   --border: #334155;
   --input: #1e293b;
   --ring: rgba(96, 165, 250, 0.3);
+
+  --tag-filled: "Filled";
+  --tag-in-progress: "In Progress";
 }
 
 body {
@@ -688,11 +694,11 @@ button {
 }
 
 .project-card .tag::before {
-  content: 'In Progress';
+  content: var(--tag-in-progress);
   position: absolute;
   width: 150%;
   height: 40px;
-  background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+  background-image: linear-gradient(45deg, #ff6547 0%, #ffb144 51%, #ff7053 100%);
   transform: rotate(-45deg) translateY(-20px);
   display: flex;
   align-items: center;
@@ -701,7 +707,7 @@ button {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
 }
 
 .project-card .tag::after {
@@ -713,7 +719,7 @@ button {
   left: 0;
   z-index: -1;
   box-shadow: 140px -140px #cc3f47;
-  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
 }
 
 
@@ -730,20 +736,8 @@ button {
 }
 
 .project-card:nth-child(2) .tag::before {
-  content: "Filled";
-  position: absolute;
-  width: 150%;
-  height: 40px;
+  content: var(--tag-filled);
   background-image: linear-gradient(45deg, #22c55e 0%, #4ade80 51%, #16a34a 100%);
-  transform: rotate(-45deg) translateY(-20px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
 }
 
 .project-card:nth-child(2) .tag::after {
@@ -772,20 +766,8 @@ button {
 }
 
 .project-card:nth-child(4) .tag::before {
-  content: "Filled";
-  position: absolute;
-  width: 150%;
-  height: 40px;
+  content: var(--tag-filled);
   background-image: linear-gradient(45deg, #22c55e 0%, #4ade80 51%, #16a34a 100%);
-  transform: rotate(-45deg) translateY(-20px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
 }
 
 .project-card:nth-child(4) .tag::after {
@@ -798,6 +780,55 @@ button {
   z-index: -1;
   box-shadow: 140px -140px #15803d;
   background-image: linear-gradient(45deg, #22c55e 0%, #4ade80 51%, #22c55e 100%);
+}
+
+
+/* Para español */
+html[lang="es"] {
+  --tag-filled: "Completado";
+  --tag-in-progress: "En Progreso";
+}
+
+/* Para francés */
+html[lang="fr"] {
+  --tag-filled: "Terminé";
+  --tag-in-progress: "En Cours";
+}
+
+/* Para portugués */
+html[lang="pt"] {
+  --tag-filled: "Concluído";
+  --tag-in-progress: "Em Progresso";
+}
+
+/* Para alemán */
+html[lang="de"] {
+  --tag-filled: "Fertig";
+  --tag-in-progress: "In Arbeit";
+}
+
+/* Para italiano */
+html[lang="it"] {
+  --tag-filled: "Completato";
+  --tag-in-progress: "In Corso";
+}
+
+/* Para japonés */
+html[lang="ja"] {
+  --tag-filled: "完了";
+  --tag-in-progress: "進行中";
+}
+
+/* Para chino */
+html[lang="zh"] {
+  --tag-filled: "已完成";
+  --tag-in-progress: "进行中";
+}
+
+/* Para ruso */
+html[lang="ru"] {
+  --tag-filled: "Завершено";
+  --tag-in-progress: "В процессе";
 }
 
 
@@ -987,35 +1018,35 @@ button {
 
 /* Selector de idioma */
 .language-selector {
-    position: relative;
+  position: relative;
 }
 
 .language-select {
-    background-color: var(--card);
-    color: var(--foreground);
-    border: 1px solid var(--border);
-    border-radius: var(--border-radius);
-    padding: 0.4rem 0.75rem;
-    font-size: 0.875rem;
-    font-family: var(--font-family);
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s ease;
+  background-color: var(--card);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  padding: 0.4rem 0.75rem;
+  font-size: 0.875rem;
+  font-family: var(--font-family);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
 }
 
 .language-select:hover {
-    border-color: var(--primary);
+  border-color: var(--primary);
 }
 
 .language-select:focus {
-    border-color: var(--primary);
-    box-shadow: 0 0 0 3px var(--ring);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--ring);
 }
 
 /* Para móvil */
 .language-selector-mobile .language-select {
-    padding: 0.4rem;
-    min-width: 60px;
+  padding: 0.4rem;
+  min-width: 60px;
 }
 
 
@@ -1093,18 +1124,18 @@ button {
 
 
   .language-selector-mobile {
-        display: block;
-    }
-    
+    display: block;
+  }
+
   .nav-desktop .language-selector {
-      display: none;
+    display: none;
   }
 }
 
 @media (min-width: 769px) {
-    .language-selector-mobile {
-        display: none;
-    }
+  .language-selector-mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {

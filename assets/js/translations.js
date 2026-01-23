@@ -11,7 +11,7 @@ export const translations = {
         "nav.skills": "Skills",
         "nav.projects": "Projects",
         "nav.contact": "Contact",
-        
+
         // Hero Section
         "hero.title": "Esteban Alayón",
         "hero.badge": "FULLSTACK DEVELOPMENT",
@@ -19,7 +19,7 @@ export const translations = {
         "hero.socialLabel": "Social networks:",
         "hero.contactBtn": "Contact",
         "hero.projectsBtn": "View Projects",
-        
+
         // About Section
         "about.title": "About Me",
         "about.formation": "Formation:",
@@ -34,10 +34,10 @@ export const translations = {
         "about.backendText": "Development of robust and scalable APIs with NestJS, Django Ninja, among others. Implementation of secure authentication and authorization systems.",
         "about.database": "Database:",
         "about.databaseText": "Design and optimization of relational database schemas. Experience with PostgreSQL, MySQL for different use cases and tools like dbdiagram.io.",
-        
+
         // Skills Section
         "skills.title": "Skills",
-        
+
         // Projects Section
         "projects.title": "Projects",
         "projects.electronicsTitle": "Administrative Electronics",
@@ -56,16 +56,18 @@ export const translations = {
         "projects.ordersCategory": "Work project",
         "projects.ordersDesc": "Web platform for managing customer orders and sales reports, ideal for businesses large and small",
         "projects.viewBtn": "See project",
-        
+
         // Contact Section
         "contact.title": "Contact",
         "contact.nameLabel": "Name:",
         "contact.emailLabel": "Email:",
         "contact.messageLabel": "Message:",
         "contact.sendBtn": "Send message",
-        "contact.footer": `Copyright © ${currentYear} Esteban Alayón - Portfolio. All rights reserved.` 
+        "contact.footer": `Copyright © ${currentYear} Esteban Alayón - Portfolio. All rights reserved.`,
+        "projects.tag.filled": "Filled",
+        "projects.tag.inProgress": "In Progress"
     },
-    
+
     es: {
         // Header
         "nav.home": "Inicio",
@@ -73,7 +75,7 @@ export const translations = {
         "nav.skills": "Habilidades",
         "nav.projects": "Proyectos",
         "nav.contact": "Contacto",
-        
+
         // Hero Section
         "hero.title": "Esteban Alayón",
         "hero.badge": "DESARROLLO FULLSTACK",
@@ -81,7 +83,7 @@ export const translations = {
         "hero.socialLabel": "Redes sociales:",
         "hero.contactBtn": "Contactar",
         "hero.projectsBtn": "Ver Proyectos",
-        
+
         // About Section
         "about.title": "Sobre Mí",
         "about.formation": "Formación:",
@@ -96,10 +98,10 @@ export const translations = {
         "about.backendText": "Desarrollo de APIs robustas y escalables con NestJS, Django Ninja, entre otros. Implementación de sistemas seguros de autenticación y autorización.",
         "about.database": "Base de Datos:",
         "about.databaseText": "Diseño y optimización de esquemas de bases de datos relacionales. Experiencia con PostgreSQL, MySQL para diferentes casos de uso y herramientas como dbdiagram.io.",
-        
+
         // Skills Section
         "skills.title": "Habilidades",
-        
+
         // Projects Section
         "projects.title": "Proyectos",
         "projects.electronicsTitle": "Electrónica Administrativa",
@@ -118,14 +120,16 @@ export const translations = {
         "projects.ordersCategory": "Proyecto laboral",
         "projects.ordersDesc": "Plataforma web para gestionar pedidos de clientes e informes de ventas, ideal para negocios grandes y pequeños",
         "projects.viewBtn": "Ver proyecto",
-        
+
         // Contact Section
         "contact.title": "Contacto",
         "contact.nameLabel": "Nombre:",
         "contact.emailLabel": "Correo electrónico:",
         "contact.messageLabel": "Mensaje:",
         "contact.sendBtn": "Enviar mensaje",
-        "contact.footer": `Copyright © ${currentYear} Esteban Alayón - Portfolio. Todos los derechos reservados.`
+        "contact.footer": `Copyright © ${currentYear} Esteban Alayón - Portfolio. Todos los derechos reservados.`,
+        "projects.tag.filled": "Completado",
+        "projects.tag.inProgress": "En Progreso"
     },
 
     fr: {
@@ -135,7 +139,7 @@ export const translations = {
         "nav.skills": "Compétences",
         "nav.projects": "Projets",
         "nav.contact": "Contact",
-        
+
         // Hero Section
         "hero.title": "Esteban Alayón",
         "hero.badge": "DÉVELOPPEMENT FULLSTACK",
@@ -143,7 +147,7 @@ export const translations = {
         "hero.socialLabel": "Réseaux sociaux:",
         "hero.contactBtn": "Contact",
         "hero.projectsBtn": "Voir les Projets",
-        
+
         // About Section
         "about.title": "À propos de moi",
         "about.formation": "Formation:",
@@ -158,10 +162,10 @@ export const translations = {
         "about.backendText": "Développement d'APIs robustes et évolutives avec NestJS, Django Ninja, entre autres. Mise en œuvre de systèmes d'authentification et d'autorisation sécurisés.",
         "about.database": "Base de Données:",
         "about.databaseText": "Conception et optimisation de schémas de bases de données relationnelles. Expérience avec PostgreSQL, MySQL pour différents cas d'usage et outils comme dbdiagram.io.",
-        
+
         // Skills Section
         "skills.title": "Compétences",
-        
+
         // Projects Section
         "projects.title": "Projets",
         "projects.electronicsTitle": "Électronique Administrative",
@@ -180,14 +184,16 @@ export const translations = {
         "projects.ordersCategory": "Projet professionnel",
         "projects.ordersDesc": "Plateforme web pour gérer les commandes des clients et les rapports de ventes, idéale pour les entreprises de toutes tailles",
         "projects.viewBtn": "Voir le projet",
-        
+
         // Contact Section
         "contact.title": "Contact",
         "contact.nameLabel": "Nom:",
         "contact.emailLabel": "Email:",
         "contact.messageLabel": "Message:",
         "contact.sendBtn": "Envoyer le message",
-        "contact.footer": `Copyright © ${currentYear} Esteban Alayón - Portfolio. Tous droits réservés.`
+        "contact.footer": `Copyright © ${currentYear} Esteban Alayón - Portfolio. Tous droits réservés.`,
+        "projects.tag.filled": "Terminé",
+        "projects.tag.inProgress": "En Cours"
     },
 
     pt: {
@@ -197,7 +203,7 @@ export const translations = {
         "nav.skills": "Habilidades",
         "nav.projects": "Projetos",
         "nav.contact": "Contato",
-        
+
         // Hero Section
         "hero.title": "Esteban Alayón",
         "hero.badge": "DESENVOLVIMENTO FULLSTACK",
@@ -205,7 +211,7 @@ export const translations = {
         "hero.socialLabel": "Redes sociais:",
         "hero.contactBtn": "Contatar",
         "hero.projectsBtn": "Ver Projetos",
-        
+
         // About Section
         "about.title": "Sobre Mim",
         "about.formation": "Formação:",
@@ -220,10 +226,10 @@ export const translations = {
         "about.backendText": "Desenvolvimento de APIs robustas e escaláveis com NestJS, Django Ninja, entre outros. Implementação de sistemas seguros de autenticação e autorização.",
         "about.database": "Banco de Dados:",
         "about.databaseText": "Projeto e otimização de esquemas de bancos de dados relacionais. Experiência com PostgreSQL, MySQL para diferentes casos de uso e ferramentas como dbdiagram.io.",
-        
+
         // Skills Section
         "skills.title": "Habilidades",
-        
+
         // Projects Section
         "projects.title": "Projetos",
         "projects.electronicsTitle": "Eletrônica Administrativa",
@@ -242,14 +248,16 @@ export const translations = {
         "projects.ordersCategory": "Projeto profissional",
         "projects.ordersDesc": "Plataforma web para gerenciar pedidos de clientes e relatórios de vendas, ideal para empresas grandes e pequenas",
         "projects.viewBtn": "Ver projeto",
-        
+
         // Contact Section
         "contact.title": "Contato",
         "contact.nameLabel": "Nome:",
         "contact.emailLabel": "Email:",
         "contact.messageLabel": "Mensagem:",
         "contact.sendBtn": "Enviar mensagem",
-        "contact.footer": `Copyright © ${currentYear} Esteban Alayón - Portfolio. Todos os direitos reservados.`
+        "contact.footer": `Copyright © ${currentYear} Esteban Alayón - Portfolio. Todos os direitos reservados.`,
+        "projects.tag.filled": "Concluído",
+        "projects.tag.inProgress": "Em Progresso"
     },
 
     de: {
@@ -259,7 +267,7 @@ export const translations = {
         "nav.skills": "Fähigkeiten",
         "nav.projects": "Projekte",
         "nav.contact": "Kontakt",
-        
+
         // Hero Section
         "hero.title": "Esteban Alayón",
         "hero.badge": "FULLSTACK-ENTWICKLUNG",
@@ -267,7 +275,7 @@ export const translations = {
         "hero.socialLabel": "Soziale Netzwerke:",
         "hero.contactBtn": "Kontakt",
         "hero.projectsBtn": "Projekte ansehen",
-        
+
         // About Section
         "about.title": "Über Mich",
         "about.formation": "Ausbildung:",
@@ -282,10 +290,10 @@ export const translations = {
         "about.backendText": "Entwicklung robuster und skalierbarer APIs mit NestJS, Django Ninja und anderen. Implementierung sicherer Authentifizierungs- und Autorisierungssysteme.",
         "about.database": "Datenbank:",
         "about.databaseText": "Design und Optimierung relationaler Datenbankschemata. Erfahrung mit PostgreSQL, MySQL für verschiedene Anwendungsfälle und Tools wie dbdiagram.io.",
-        
+
         // Skills Section
         "skills.title": "Fähigkeiten",
-        
+
         // Projects Section
         "projects.title": "Projekte",
         "projects.electronicsTitle": "Verwaltungselektronik",
@@ -304,14 +312,16 @@ export const translations = {
         "projects.ordersCategory": "Berufliches Projekt",
         "projects.ordersDesc": "Webplattform zur Verwaltung von Kundenaufträgen und Verkaufsberichten, ideal für Unternehmen aller Größen",
         "projects.viewBtn": "Projekt ansehen",
-        
+
         // Contact Section
         "contact.title": "Kontakt",
         "contact.nameLabel": "Name:",
         "contact.emailLabel": "E-Mail:",
         "contact.messageLabel": "Nachricht:",
         "contact.sendBtn": "Nachricht senden",
-        "contact.footer": `Copyright © ${currentYear} Esteban Alayón - Portfolio. Alle Rechte vorbehalten.`
+        "contact.footer": `Copyright © ${currentYear} Esteban Alayón - Portfolio. Alle Rechte vorbehalten.`,
+        "projects.tag.filled": "Fertig",
+        "projects.tag.inProgress": "In Arbeit"
     },
 
     it: {
@@ -321,7 +331,7 @@ export const translations = {
         "nav.skills": "Competenze",
         "nav.projects": "Progetti",
         "nav.contact": "Contatto",
-        
+
         // Hero Section
         "hero.title": "Esteban Alayón",
         "hero.badge": "SVILUPPO FULLSTACK",
@@ -329,7 +339,7 @@ export const translations = {
         "hero.socialLabel": "Reti sociali:",
         "hero.contactBtn": "Contatta",
         "hero.projectsBtn": "Vedi Progetti",
-        
+
         // About Section
         "about.title": "Chi Sono",
         "about.formation": "Formazione:",
@@ -344,10 +354,10 @@ export const translations = {
         "about.backendText": "Sviluppo di API robuste e scalabili con NestJS, Django Ninja, tra gli altri. Implementazione di sistemi sicuri di autenticazione e autorizzazione.",
         "about.database": "Database:",
         "about.databaseText": "Progettazione e ottimizzazione di schemi di database relazionali. Esperienza con PostgreSQL, MySQL per diversi casi d'uso e strumenti come dbdiagram.io.",
-        
+
         // Skills Section
         "skills.title": "Competenze",
-        
+
         // Projects Section
         "projects.title": "Progetti",
         "projects.electronicsTitle": "Elettronica Amministrativa",
@@ -366,14 +376,16 @@ export const translations = {
         "projects.ordersCategory": "Progetto lavorativo",
         "projects.ordersDesc": "Piattaforma web per gestire ordini clienti e report di vendita, ideale per aziende grandi e piccole",
         "projects.viewBtn": "Vedi progetto",
-        
+
         // Contact Section
         "contact.title": "Contatto",
         "contact.nameLabel": "Nome:",
         "contact.emailLabel": "Email:",
         "contact.messageLabel": "Messaggio:",
         "contact.sendBtn": "Invia messaggio",
-        "contact.footer": `Copyright © ${currentYear} Esteban Alayón - Portfolio. Tutti i diritti riservati.`
+        "contact.footer": `Copyright © ${currentYear} Esteban Alayón - Portfolio. Tutti i diritti riservati.`,
+        "projects.tag.filled": "Completato",
+        "projects.tag.inProgress": "In Corso"
     },
 
     ja: {
@@ -383,7 +395,7 @@ export const translations = {
         "nav.skills": "スキル",
         "nav.projects": "プロジェクト",
         "nav.contact": "連絡先",
-        
+
         // Hero Section
         "hero.title": "エステバン・アライオン",
         "hero.badge": "フルスタック開発",
@@ -391,7 +403,7 @@ export const translations = {
         "hero.socialLabel": "ソーシャルネットワーク:",
         "hero.contactBtn": "連絡する",
         "hero.projectsBtn": "プロジェクトを見る",
-        
+
         // About Section
         "about.title": "私について",
         "about.formation": "学歴:",
@@ -406,10 +418,10 @@ export const translations = {
         "about.backendText": "NestJS、Django Ninjaなどによる堅牢でスケーラブルなAPIの開発。安全な認証および認可システムの実装。",
         "about.database": "データベース:",
         "about.databaseText": "リレーショナルデータベーススキーマの設計と最適化。PostgreSQL、MySQLのさまざまなユースケースとdbdiagram.ioなどのツールの経験があります。",
-        
+
         // Skills Section
         "skills.title": "スキル",
-        
+
         // Projects Section
         "projects.title": "プロジェクト",
         "projects.electronicsTitle": "管理用電子機器",
@@ -428,14 +440,16 @@ export const translations = {
         "projects.ordersCategory": "仕事のプロジェクト",
         "projects.ordersDesc": "顧客注文と販売レポートを管理するWebプラットフォーム、大小問わずビジネスに最適",
         "projects.viewBtn": "プロジェクトを見る",
-        
+
         // Contact Section
         "contact.title": "連絡先",
         "contact.nameLabel": "名前:",
         "contact.emailLabel": "メール:",
         "contact.messageLabel": "メッセージ:",
         "contact.sendBtn": "メッセージを送信",
-        "contact.footer": `著作権 © ${currentYear} Esteban Alayón - ポートフォリオ。無断複写・転載を禁じます。`
+        "contact.footer": `著作権 © ${currentYear} Esteban Alayón - ポートフォリオ。無断複写・転載を禁じます。`,
+        "projects.tag.filled": "完了",
+        "projects.tag.inProgress": "進行中"
     },
 
     zh: {
@@ -445,7 +459,7 @@ export const translations = {
         "nav.skills": "技能",
         "nav.projects": "项目",
         "nav.contact": "联系",
-        
+
         // Hero Section
         "hero.title": "埃斯特万·阿拉永",
         "hero.badge": "全栈开发",
@@ -453,7 +467,7 @@ export const translations = {
         "hero.socialLabel": "社交网络:",
         "hero.contactBtn": "联系",
         "hero.projectsBtn": "查看项目",
-        
+
         // About Section
         "about.title": "关于我",
         "about.formation": "教育背景:",
@@ -468,10 +482,10 @@ export const translations = {
         "about.backendText": "使用NestJS、Django Ninja等开发健壮且可扩展的API。实施安全的身份验证和授权系统。",
         "about.database": "数据库:",
         "about.databaseText": "设计和优化关系数据库模式。在不同用例下使用PostgreSQL、MySQL以及dbdiagram.io等工具的经验。",
-        
+
         // Skills Section
         "skills.title": "技能",
-        
+
         // Projects Section
         "projects.title": "项目",
         "projects.electronicsTitle": "行政管理电子",
@@ -490,14 +504,16 @@ export const translations = {
         "projects.ordersCategory": "工作项目",
         "projects.ordersDesc": "用于管理客户订单和销售报告的网络平台，适合各种规模的企业",
         "projects.viewBtn": "查看项目",
-        
+
         // Contact Section
         "contact.title": "联系",
         "contact.nameLabel": "姓名:",
         "contact.emailLabel": "邮箱:",
         "contact.messageLabel": "消息:",
         "contact.sendBtn": "发送消息",
-        "contact.footer": `版权所有 © ${currentYear} Esteban Alayón - 作品集。保留所有权利。`
+        "contact.footer": `版权所有 © ${currentYear} Esteban Alayón - 作品集。保留所有权利。`,
+        "projects.tag.filled": "已完成",
+        "projects.tag.inProgress": "进行中"
     },
 
     ru: {
@@ -507,7 +523,7 @@ export const translations = {
         "nav.skills": "Навыки",
         "nav.projects": "Проекты",
         "nav.contact": "Контакт",
-        
+
         // Hero Section
         "hero.title": "Эстебан Алайон",
         "hero.badge": "ПОЛНОЦЕННАЯ РАЗРАБОТКА",
@@ -515,7 +531,7 @@ export const translations = {
         "hero.socialLabel": "Социальные сети:",
         "hero.contactBtn": "Контакт",
         "hero.projectsBtn": "Посмотреть проекты",
-        
+
         // About Section
         "about.title": "Обо мне",
         "about.formation": "Образование:",
@@ -530,10 +546,10 @@ export const translations = {
         "about.backendText": "Разработка надежных и масштабируемых API с помощью NestJS, Django Ninja и других. Реализация безопасных систем аутентификации и авторизации.",
         "about.database": "База данных:",
         "about.databaseText": "Проектирование и оптимизация схем реляционных баз данных. Опыт работы с PostgreSQL, MySQL для различных случаев использования и инструментами, такими как dbdiagram.io.",
-        
+
         // Skills Section
         "skills.title": "Навыки",
-        
+
         // Projects Section
         "projects.title": "Проекты",
         "projects.electronicsTitle": "Административная электроника",
@@ -552,13 +568,15 @@ export const translations = {
         "projects.ordersCategory": "Рабочий проект",
         "projects.ordersDesc": "Веб-платформа для управления заказами клиентов и отчетами о продажах, идеально подходит для предприятий любого размера",
         "projects.viewBtn": "Посмотреть проект",
-        
+
         // Contact Section
         "contact.title": "Контакт",
         "contact.nameLabel": "Имя:",
         "contact.emailLabel": "Email:",
         "contact.messageLabel": "Сообщение:",
         "contact.sendBtn": "Отправить сообщение",
-        "contact.footer": `Авторское право © ${currentYear} Esteban Alayón - Портфолио. Все права защищены.`
+        "contact.footer": `Авторское право © ${currentYear} Esteban Alayón - Портфолио. Все права защищены.`,
+        "projects.tag.filled": "Завершено",
+        "projects.tag.inProgress": "В процессе"
     }
 };
